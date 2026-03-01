@@ -266,7 +266,7 @@ def generate_markdown_report(data: dict, date_str: str) -> str:
     
     best_comp = max(comp_stats.items(), key=lambda x: x[1]["mentioned"]/max(x[1]["total"],1)) if comp_stats else None
     if best_comp:
-        comp_rate = best_comp[1]["mentioned"] / best_comp[1]["total"] * 100
+        comp_rate = best_comp[1]["mentioned"] / max(best_comp[1]["total"], 1) * 100
         lines.append(f"- 📈 競合トップは **{best_comp[0]}** (言及率{comp_rate:.0f}%) — ベンチマーク対象")
     
     return "\n".join(lines)

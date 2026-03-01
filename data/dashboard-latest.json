@@ -1,16 +1,187 @@
 {
-  "generated_at": "2026-03-01T18:09:58.494130",
-  "client": "東京飲食店（テスト）",
+  "generated_at": "2026-03-01T12:12:04.401641",
+  "client": "東京飲食店デモ",
   "industry": "飲食店",
   "region": "東京",
-  "runs_per_query": 1,
-  "total_queries": 5,
-  "brands": [],
+  "runs_per_query": 3,
+  "total_queries": 15,
+  "brands": [
+    {
+      "name": "鳥貴族",
+      "mention_rate": 40.0,
+      "mentioned": 6,
+      "total": 15,
+      "is_target": false,
+      "by_query": {
+        "東京でおすすめのレストランを教えてください": {
+          "rate": 33.3,
+          "mentioned": 1,
+          "total": 3
+        },
+        "東京で接待に使える飲食店はどこですか": {
+          "rate": 33.3,
+          "mentioned": 1,
+          "total": 3
+        },
+        "東京でコスパの良いディナーができるお店は": {
+          "rate": 100.0,
+          "mentioned": 3,
+          "total": 3
+        },
+        "デートにおすすめの東京のレストランを紹介して": {
+          "rate": 0.0,
+          "mentioned": 0,
+          "total": 3
+        },
+        "東京で外国人観光客に人気の飲食店は": {
+          "rate": 33.3,
+          "mentioned": 1,
+          "total": 3
+        }
+      }
+    },
+    {
+      "name": "一蘭",
+      "mention_rate": 33.3,
+      "mentioned": 5,
+      "total": 15,
+      "is_target": false,
+      "by_query": {
+        "東京でおすすめのレストランを教えてください": {
+          "rate": 0.0,
+          "mentioned": 0,
+          "total": 3
+        },
+        "東京で接待に使える飲食店はどこですか": {
+          "rate": 0.0,
+          "mentioned": 0,
+          "total": 3
+        },
+        "東京でコスパの良いディナーができるお店は": {
+          "rate": 66.7,
+          "mentioned": 2,
+          "total": 3
+        },
+        "デートにおすすめの東京のレストランを紹介して": {
+          "rate": 0.0,
+          "mentioned": 0,
+          "total": 3
+        },
+        "東京で外国人観光客に人気の飲食店は": {
+          "rate": 100.0,
+          "mentioned": 3,
+          "total": 3
+        }
+      }
+    },
+    {
+      "name": "叙々苑",
+      "mention_rate": 6.7,
+      "mentioned": 1,
+      "total": 15,
+      "is_target": false,
+      "by_query": {
+        "東京でおすすめのレストランを教えてください": {
+          "rate": 0.0,
+          "mentioned": 0,
+          "total": 3
+        },
+        "東京で接待に使える飲食店はどこですか": {
+          "rate": 0.0,
+          "mentioned": 0,
+          "total": 3
+        },
+        "東京でコスパの良いディナーができるお店は": {
+          "rate": 33.3,
+          "mentioned": 1,
+          "total": 3
+        },
+        "デートにおすすめの東京のレストランを紹介して": {
+          "rate": 0.0,
+          "mentioned": 0,
+          "total": 3
+        },
+        "東京で外国人観光客に人気の飲食店は": {
+          "rate": 0.0,
+          "mentioned": 0,
+          "total": 3
+        }
+      }
+    },
+    {
+      "name": "俺のフレンチ",
+      "mention_rate": 0.0,
+      "mentioned": 0,
+      "total": 15,
+      "is_target": true,
+      "by_query": {
+        "東京でおすすめのレストランを教えてください": {
+          "rate": 0.0,
+          "mentioned": 0,
+          "total": 3
+        },
+        "東京で接待に使える飲食店はどこですか": {
+          "rate": 0.0,
+          "mentioned": 0,
+          "total": 3
+        },
+        "東京でコスパの良いディナーができるお店は": {
+          "rate": 0.0,
+          "mentioned": 0,
+          "total": 3
+        },
+        "デートにおすすめの東京のレストランを紹介して": {
+          "rate": 0.0,
+          "mentioned": 0,
+          "total": 3
+        },
+        "東京で外国人観光客に人気の飲食店は": {
+          "rate": 0.0,
+          "mentioned": 0,
+          "total": 3
+        }
+      }
+    },
+    {
+      "name": "サイゼリヤ",
+      "mention_rate": 0.0,
+      "mentioned": 0,
+      "total": 15,
+      "is_target": false,
+      "by_query": {
+        "東京でおすすめのレストランを教えてください": {
+          "rate": 0.0,
+          "mentioned": 0,
+          "total": 3
+        },
+        "東京で接待に使える飲食店はどこですか": {
+          "rate": 0.0,
+          "mentioned": 0,
+          "total": 3
+        },
+        "東京でコスパの良いディナーができるお店は": {
+          "rate": 0.0,
+          "mentioned": 0,
+          "total": 3
+        },
+        "デートにおすすめの東京のレストランを紹介して": {
+          "rate": 0.0,
+          "mentioned": 0,
+          "total": 3
+        },
+        "東京で外国人観光客に人気の飲食店は": {
+          "rate": 0.0,
+          "mentioned": 0,
+          "total": 3
+        }
+      }
+    }
+  ],
   "queries": [
-    "東京でおすすめのラーメン屋を教えてください",
-    "渋谷でデートにおすすめのレストランはどこですか",
-    "新宿で深夜営業している居酒屋を教えてください",
-    "東京で外国人観光客に人気の寿司屋はどこですか",
-    "銀座で接待に使える高級レストランを紹介してください"
+    "東京でおすすめのレストランを教えてください",
+    "東京で接待に使える飲食店はどこですか",
+    "東京でコスパの良いディナーができるお店は",
+    "デートにおすすめの東京のレストランを紹介して",
+    "東京で外国人観光客に人気の飲食店は"
   ]
 }
