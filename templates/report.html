@@ -6,61 +6,93 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;600;700;800&display=swap');
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
-body { font-family: 'Noto Sans JP', sans-serif; color: #1e293b; font-size: 11pt; line-height: 1.7; }
+body { font-family: 'Noto Sans JP', sans-serif; color: #1e293b; font-size: 10pt; line-height: 1.7; }
 
-.page { padding: 48px; }
+.page { padding: 40px 48px; }
 
 /* Header */
-.header { display: flex; justify-content: space-between; align-items: center; padding-bottom: 20px; border-bottom: 3px solid #2563eb; margin-bottom: 32px; }
-.header-left h1 { font-size: 20pt; font-weight: 800; color: #2563eb; }
-.header-left p { font-size: 9pt; color: #64748b; }
-.header-right { text-align: right; font-size: 9pt; color: #64748b; }
+.header { display: flex; justify-content: space-between; align-items: center; padding-bottom: 16px; border-bottom: 3px solid #2563eb; margin-bottom: 24px; }
+.header-left h1 { font-size: 18pt; font-weight: 800; color: #2563eb; }
+.header-left p { font-size: 8pt; color: #64748b; }
+.header-right { text-align: right; font-size: 8pt; color: #64748b; }
 
-/* Score Section */
-.score-section { text-align: center; margin: 32px 0; padding: 28px; background: #f8fafc; border-radius: 12px; }
-.score-grade { font-size: 56pt; font-weight: 800; line-height: 1; }
+/* Score */
+.score-section { text-align: center; margin: 24px 0; padding: 24px; background: #f8fafc; border-radius: 12px; }
+.score-grade { font-size: 48pt; font-weight: 800; line-height: 1; }
 .score-grade.a { color: #22c55e; }
 .score-grade.b { color: #84cc16; }
 .score-grade.c { color: #fb923c; }
 .score-grade.d { color: #f97316; }
 .score-grade.f { color: #ef4444; }
-.score-label { font-size: 10pt; color: #64748b; margin-top: 4px; }
-.score-rate { font-size: 14pt; font-weight: 700; margin-top: 8px; }
+.score-label { font-size: 9pt; color: #64748b; margin-top: 4px; }
+.score-rate { font-size: 13pt; font-weight: 700; margin-top: 8px; }
 
-/* Summary */
-.summary { display: flex; gap: 16px; margin-bottom: 28px; }
-.summary-card { flex: 1; padding: 16px; border-radius: 8px; background: #eff6ff; text-align: center; }
-.summary-card .num { font-size: 18pt; font-weight: 800; color: #2563eb; }
-.summary-card .label { font-size: 8pt; color: #64748b; }
+/* Summary Cards */
+.summary { display: flex; gap: 12px; margin-bottom: 24px; }
+.summary-card { flex: 1; padding: 14px; border-radius: 8px; background: #eff6ff; text-align: center; }
+.summary-card .num { font-size: 16pt; font-weight: 800; color: #2563eb; }
+.summary-card .label { font-size: 7pt; color: #64748b; }
 
-/* Query Result */
-.query-block { margin-bottom: 24px; page-break-inside: avoid; }
-.query-title { font-size: 11pt; font-weight: 700; padding: 8px 12px; background: #eff6ff; border-left: 4px solid #2563eb; border-radius: 0 6px 6px 0; margin-bottom: 8px; }
-.badge { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 8pt; font-weight: 600; }
+/* Key Facts Banner */
+.facts-banner { background: linear-gradient(135deg, #1e40af, #2563eb); color: white; border-radius: 10px; padding: 20px 24px; margin: 20px 0; }
+.facts-banner h3 { font-size: 11pt; font-weight: 700; margin-bottom: 12px; }
+.facts-grid { display: flex; gap: 12px; }
+.fact-item { flex: 1; text-align: center; padding: 10px; background: rgba(255,255,255,0.15); border-radius: 8px; }
+.fact-num { font-size: 18pt; font-weight: 800; }
+.fact-label { font-size: 7pt; opacity: 0.9; margin-top: 2px; }
+
+/* Section Headers */
+.section-title { font-size: 13pt; font-weight: 800; color: #1e293b; margin: 28px 0 12px; padding-bottom: 6px; border-bottom: 2px solid #e2e8f0; }
+.section-title-blue { color: #2563eb; border-bottom-color: #2563eb; }
+
+/* Query Results */
+.query-block { margin-bottom: 16px; page-break-inside: avoid; }
+.query-title { font-size: 10pt; font-weight: 700; padding: 6px 10px; background: #eff6ff; border-left: 4px solid #2563eb; border-radius: 0 6px 6px 0; margin-bottom: 6px; }
+.badge { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 7pt; font-weight: 600; }
 .badge-yes { background: #dcfce7; color: #166534; }
 .badge-no { background: #fef2f2; color: #991b1b; }
-.response-box { font-size: 9pt; color: #475569; padding: 12px; background: #f8fafc; border-radius: 6px; margin-top: 6px; line-height: 1.6; }
-.sources { font-size: 8pt; color: #94a3b8; margin-top: 6px; }
+.response-box { font-size: 8pt; color: #475569; padding: 10px; background: #f8fafc; border-radius: 6px; margin-top: 4px; line-height: 1.6; }
+.sources { font-size: 7pt; color: #94a3b8; margin-top: 4px; }
 
-/* Advice */
-.advice-section { margin-top: 28px; page-break-before: always; }
-.advice-title { font-size: 14pt; font-weight: 800; color: #1e293b; margin-bottom: 16px; padding-bottom: 8px; border-bottom: 2px solid #e2e8f0; }
-.advice-item { padding: 16px; margin-bottom: 12px; background: #f8fafc; border-radius: 8px; border-left: 4px solid #f97316; }
-.advice-item h4 { font-size: 11pt; font-weight: 700; margin-bottom: 4px; }
-.advice-item p { font-size: 9pt; color: #475569; }
+/* Diagnosis Section */
+.diagnosis-box { background: #fefce8; border: 1px solid #fde047; border-radius: 8px; padding: 16px; margin: 16px 0; }
+.diagnosis-box p { font-size: 9pt; margin-bottom: 4px; }
+
+/* Measures Table */
+.measures-table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 8pt; }
+.measures-table th { background: #1e40af; color: white; padding: 8px 6px; text-align: center; font-weight: 600; font-size: 7pt; }
+.measures-table th:nth-child(2) { text-align: left; }
+.measures-table td { padding: 6px; border-bottom: 1px solid #e2e8f0; text-align: center; }
+.measures-table td:nth-child(2) { text-align: left; }
+.measures-table tr:nth-child(even) { background: #f8fafc; }
+.measures-table .score-high { color: #16a34a; font-weight: 700; }
+.measures-table .score-mid { color: #f59e0b; font-weight: 700; }
+
+/* TOP 3 Cards */
+.top3-card { padding: 16px; margin-bottom: 14px; background: #ffffff; border: 1px solid #e2e8f0; border-radius: 10px; border-left: 5px solid #f97316; page-break-inside: avoid; }
+.top3-card h4 { font-size: 11pt; font-weight: 700; color: #1e293b; margin-bottom: 8px; }
+.top3-detail { font-size: 8.5pt; color: #475569; line-height: 1.8; white-space: pre-line; }
+.top3-detail strong { color: #1e293b; }
 
 /* Competitors */
-.competitor-table { width: 100%; border-collapse: collapse; margin-top: 12px; font-size: 9pt; }
+.competitor-table { width: 100%; border-collapse: collapse; margin-top: 8px; font-size: 9pt; }
 .competitor-table th { background: #f1f5f9; padding: 8px 12px; text-align: left; font-weight: 600; border-bottom: 2px solid #e2e8f0; }
 .competitor-table td { padding: 8px 12px; border-bottom: 1px solid #e2e8f0; }
+.competitor-bar { display: inline-block; height: 8px; background: #2563eb; border-radius: 4px; }
+
+/* Competitor Analysis */
+.comp-analysis { background: #f0f9ff; border-radius: 8px; padding: 16px; margin: 12px 0; font-size: 9pt; line-height: 1.8; }
 
 /* CTA */
-.cta-section { margin-top: 32px; padding: 24px; background: linear-gradient(135deg, #2563eb, #1d4ed8); color: #fff; border-radius: 12px; text-align: center; }
-.cta-section h3 { font-size: 14pt; font-weight: 800; margin-bottom: 4px; }
+.cta-section { margin-top: 28px; padding: 24px; background: linear-gradient(135deg, #2563eb, #1d4ed8); color: #fff; border-radius: 12px; text-align: center; page-break-inside: avoid; }
+.cta-section h3 { font-size: 13pt; font-weight: 800; margin-bottom: 4px; }
 .cta-section p { font-size: 9pt; opacity: .85; }
+.cta-section .price { font-size: 11pt; font-weight: 700; margin-top: 8px; opacity: 1; }
 
 /* Footer */
-.footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid #e2e8f0; font-size: 8pt; color: #94a3b8; display: flex; justify-content: space-between; }
+.footer { margin-top: 32px; padding-top: 12px; border-top: 1px solid #e2e8f0; font-size: 7pt; color: #94a3b8; display: flex; justify-content: space-between; }
+
+.page-break { page-break-before: always; }
 </style>
 </head>
 <body>
@@ -69,11 +101,11 @@ body { font-family: 'Noto Sans JP', sans-serif; color: #1e293b; font-size: 11pt;
   <!-- Header -->
   <div class="header">
     <div class="header-left">
-      <h1>AEO 診断レポート</h1>
-      <p>AI検索最適化 診断結果</p>
+      <h1>📊 AEO 診断レポート</h1>
+      <p>AI検索最適化 詳細診断結果</p>
     </div>
     <div class="header-right">
-      <p>{{ business_name }}</p>
+      <p><strong>{{ business_name }}</strong></p>
       <p>{{ industry }} / {{ area }}</p>
       <p>{{ date }}</p>
     </div>
@@ -82,7 +114,7 @@ body { font-family: 'Noto Sans JP', sans-serif; color: #1e293b; font-size: 11pt;
   <!-- Score -->
   <div class="score-section">
     <div class="score-grade {{ grade_class }}">{{ grade }}</div>
-    <div class="score-label">総合評価</div>
+    <div class="score-label">AI検索 総合評価</div>
     <div class="score-rate">ブランド言及率: {{ mention_rate }}%</div>
   </div>
 
@@ -94,7 +126,7 @@ body { font-family: 'Noto Sans JP', sans-serif; color: #1e293b; font-size: 11pt;
     </div>
     <div class="summary-card">
       <div class="num">{{ mentioned_count }}</div>
-      <div class="label">言及されたクエリ</div>
+      <div class="label">言及クエリ</div>
     </div>
     <div class="summary-card">
       <div class="num">{{ competitor_count }}</div>
@@ -102,7 +134,39 @@ body { font-family: 'Noto Sans JP', sans-serif; color: #1e293b; font-size: 11pt;
     </div>
   </div>
 
+  <!-- Key Facts -->
+  <div class="facts-banner">
+    <h3>📈 なぜ今、AI検索対策が必要なのか</h3>
+    <div class="facts-grid">
+      <div class="fact-item">
+        <div class="fact-num">7.5倍</div>
+        <div class="fact-label">AI検索利用の増加率<br>(前年比)</div>
+      </div>
+      <div class="fact-item">
+        <div class="fact-num">4.4倍</div>
+        <div class="fact-label">AI経由来店客の<br>コンバージョン価値</div>
+      </div>
+      <div class="fact-item">
+        <div class="fact-num">47%</div>
+        <div class="fact-label">口コミ20件未満の店を<br>避ける消費者の割合</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Diagnosis Result -->
+  {% if advice_sections.diagnosis %}
+  <div class="section-title">🔍 診断結果</div>
+  <div class="diagnosis-box">
+    {% for line in advice_sections.diagnosis.split('\n') %}
+      {% if line.strip() %}
+      <p>{{ line }}</p>
+      {% endif %}
+    {% endfor %}
+  </div>
+  {% endif %}
+
   <!-- Query Results -->
+  <div class="section-title">📝 クエリ別 詳細結果</div>
   {% for qr in query_results %}
   <div class="query-block">
     <div class="query-title">🔍 「{{ qr.query }}」</div>
@@ -122,38 +186,99 @@ body { font-family: 'Noto Sans JP', sans-serif; color: #1e293b; font-size: 11pt;
 
   <!-- Competitors -->
   {% if competitors %}
-  <h3 style="font-size:12pt;font-weight:700;margin:24px 0 8px">🏢 AI検索で推薦されている競合</h3>
+  <div class="section-title">🏢 AI検索で推薦されている競合</div>
   <table class="competitor-table">
-    <thead><tr><th>名前</th><th>言及回数</th></tr></thead>
+    <thead><tr><th>店舗・サービス名</th><th>AI推薦回数</th><th>推薦頻度</th></tr></thead>
     <tbody>
       {% for c in competitors %}
-      <tr><td>{{ c.name }}</td><td>{{ c.mentions }}回</td></tr>
+      <tr>
+        <td>{{ c.name }}</td>
+        <td>{{ c.mentions }}回</td>
+        <td><span class="competitor-bar" style="width: {{ c.mentions * 30 }}px"></span></td>
+      </tr>
       {% endfor %}
     </tbody>
   </table>
   {% endif %}
 
-  <!-- Advice -->
-  <div class="advice-section">
-    <div class="advice-title">💡 改善提案 TOP 3</div>
-    {% for a in advice_items %}
-    <div class="advice-item">
-      <h4>{{ loop.index }}. {{ a.title }}</h4>
-      <p>{{ a.description }}</p>
-    </div>
+  <!-- Page Break for Advice -->
+  <div class="page-break"></div>
+
+  <!-- 10 Measures Table -->
+  {% if advice_sections.table_rows %}
+  <div class="section-title section-title-blue">📋 改善施策一覧（10個 / スコアリング）</div>
+  <table class="measures-table">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>施策内容</th>
+        <th>改善効果</th>
+        <th>効果</th>
+        <th>手軽さ</th>
+        <th>スコア</th>
+        <th>所要時間</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for row in advice_sections.table_rows %}
+      <tr>
+        <td>{{ row.num }}</td>
+        <td>{{ row.action }}</td>
+        <td>{{ row.improvement }}</td>
+        <td>{{ row.effect }}</td>
+        <td>{{ row.ease }}</td>
+        <td>{% if row.score|int >= 20 %}<span class="score-high">{{ row.score }}</span>{% else %}<span class="score-mid">{{ row.score }}</span>{% endif %}</td>
+        <td>{{ row.time }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  {% endif %}
+
+  <!-- TOP 3 Recommendations -->
+  <div class="section-title" style="color: #ea580c; border-bottom-color: #ea580c;">🎯 TOP 3 推奨施策（優先度順）</div>
+  {% for item in advice_sections.top3[:3] %}
+  <div class="top3-card">
+    <h4>{{ item.title }}</h4>
+    <div class="top3-detail">{{ item.description }}</div>
+  </div>
+  {% endfor %}
+
+  <!-- Competitor Analysis -->
+  {% if advice_sections.competitors %}
+  <div class="section-title">🔎 競合が推薦される理由</div>
+  <div class="comp-analysis">
+    {% for line in advice_sections.competitors.split('\n') %}
+      {% if line.strip() %}
+      <p>{{ line }}</p>
+      {% endif %}
     {% endfor %}
   </div>
+  {% endif %}
+
+  <!-- Stats -->
+  {% if advice_sections.stats %}
+  <div class="section-title">📊 参考データ</div>
+  <div style="font-size: 8pt; color: #64748b; padding: 12px; background: #f8fafc; border-radius: 8px;">
+    {% for line in advice_sections.stats.split('\n') %}
+      {% if line.strip() %}
+      <p>{{ line }}</p>
+      {% endif %}
+    {% endfor %}
+  </div>
+  {% endif %}
 
   <!-- CTA -->
   <div class="cta-section">
     <h3>継続的なAI検索対策で集客を改善しませんか？</h3>
-    <p>月額1万円から、AI検索での推薦獲得をサポートします。まずはお気軽にご相談ください。</p>
+    <p>AI検索での推薦獲得をモニタリング + 改善代行でサポートします。</p>
+    <div class="price">モニタリングプラン: 月額1万円〜 ／ 改善代行プラン: 月額5万円〜</div>
   </div>
 
   <!-- Footer -->
   <div class="footer">
     <span>AEO Monitor Japan — AI検索最適化サービス</span>
-    <span>{{ date }}</span>
+    <span>{{ date }} | Confidential</span>
   </div>
 
 </div>

@@ -117,12 +117,66 @@ def run_diagnosis(business_name: str, industry: str, area: str, queries: list) -
     # Get improvement advice
     advice = ""
     if OPENAI_API_KEY:
-        advice_prompt = f"""あなたはAEO（AI検索最適化）の専門家です。以下の診断結果を見て、改善提案を3つ簡潔に書いてください。
+        # Competitors summary for prompt
+    comp_summary = ", ".join([f"{c[0]}({c[1]}回)" for c in sorted_comps[:5]]) if sorted_comps else "なし"
+    
+    # Query details for prompt
+    query_detail = ""
+    for qr in query_results:
+        query_detail += f"\nQ: {qr['query']}\n言及: {'あり' if qr['mentioned'] else 'なし'}\n引用ソース: {', '.join(qr.get('sources', []))}\n競合: {', '.join(qr.get('competitors_found', [])[:3])}\n"
 
-ビジネス: {business_name}（{industry} / {area}）
-AI検索言及率: {mention_rate}%（{mentioned_count}/{total}クエリで言及）
+    advice_prompt = f"""あなたはAEO（AI検索最適化）の実務コンサルタントです。
+飲食店や中小企業のオーナーが**明日から実行できる**レベルの具体的な改善提案を生成してください。
 
-各提案は1行で、具体的なアクションを書いてください。番号付きリストで。"""
+## 重要ルール
+- 「SEO対策を強化」「構造化データ整備」など抽象的な表現は禁止
+- 必ず「何を」「どこで」「どうやって」を具体的に書く
+- ITに詳しくないオーナーでも実行できる手順にする
+- **Markdown形式で出力**（見出し、箇条書き、表を活用）
+
+## クライアント情報
+- 企業名: {business_name}
+- 業種: {industry}
+- エリア: {area}
+- AI検索言及率: {mention_rate}%（{mentioned_count}/{total}クエリで言及）
+- 推薦されていた競合: {comp_summary}
+
+## 各クエリの詳細結果
+{query_detail}
+
+## 以下の形式で出力してください：
+
+### 診断結果
+- **現状**: AI検索で推薦されない直接的な原因（2行）
+- **競合との差**: 推薦されている店とされていない店の具体的な違い
+
+### 施策一覧（10個）
+
+| # | 何をするか（具体的に） | 何が改善されるか | 効果(5) | 手軽さ(5) | スコア(/25) | 所要時間 |
+|---|----------------------|----------------|---------|----------|------------|---------|
+
+### 🎯 TOP 3 推奨施策
+
+**施策1: [具体名]（スコア /25）**
+📌 **解決する問題**: ...
+📝 **やること（ステップ）**:
+  1. [明日できる具体的アクション]
+  2. [次にやること]
+  3. [その次]
+⏰ **所要時間**: 〇時間（初回）/ 週〇分（継続）
+📈 **期待効果**: [数値で]
+💰 **コスト**: 無料 / 月額〇円
+
+**施策2: ...**
+**施策3: ...**
+
+### AIが推薦している競合の特徴
+推薦されている店が「なぜAIに選ばれるのか」を具体的に3つ。
+
+### 📊 参考データ
+- AI検索利用者は前年比7.5倍に急増（BrightLocal 2026調査）
+- AI経由の来店客は従来の4.4倍の価値がある（Semrush調査）
+- 口コミ20件未満の店は47%の消費者が利用回避"""
         advice = query_openai(advice_prompt)
 
     # Sort competitors
