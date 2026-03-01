@@ -1,2 +1,8 @@
+[phases.setup]
+nixPkgs = ["python3", "pango", "gobject-introspection", "glib", "harfbuzz", "fontconfig", "freetype", "cairo", "gdk-pixbuf"]
+
+[phases.install]
+cmds = ["pip install -r requirements.txt"]
+
 [start]
 cmd = "python3 server.py"

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;600;700;800&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Noto Sans JP', sans-serif; color: #1e293b; font-size: 11pt; line-height: 1.7; }
+
+.page { padding: 48px; }
+
+/* Header */
+.header { display: flex; justify-content: space-between; align-items: center; padding-bottom: 20px; border-bottom: 3px solid #2563eb; margin-bottom: 32px; }
+.header-left h1 { font-size: 20pt; font-weight: 800; color: #2563eb; }
+.header-left p { font-size: 9pt; color: #64748b; }
+.header-right { text-align: right; font-size: 9pt; color: #64748b; }
+
+/* Score Section */
+.score-section { text-align: center; margin: 32px 0; padding: 28px; background: #f8fafc; border-radius: 12px; }
+.score-grade { font-size: 56pt; font-weight: 800; line-height: 1; }
+.score-grade.a { color: #22c55e; }
+.score-grade.b { color: #84cc16; }
+.score-grade.c { color: #fb923c; }
+.score-grade.d { color: #f97316; }
+.score-grade.f { color: #ef4444; }
+.score-label { font-size: 10pt; color: #64748b; margin-top: 4px; }
+.score-rate { font-size: 14pt; font-weight: 700; margin-top: 8px; }
+
+/* Summary */
+.summary { display: flex; gap: 16px; margin-bottom: 28px; }
+.summary-card { flex: 1; padding: 16px; border-radius: 8px; background: #eff6ff; text-align: center; }
+.summary-card .num { font-size: 18pt; font-weight: 800; color: #2563eb; }
+.summary-card .label { font-size: 8pt; color: #64748b; }
+
+/* Query Result */
+.query-block { margin-bottom: 24px; page-break-inside: avoid; }
+.query-title { font-size: 11pt; font-weight: 700; padding: 8px 12px; background: #eff6ff; border-left: 4px solid #2563eb; border-radius: 0 6px 6px 0; margin-bottom: 8px; }
+.badge { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 8pt; font-weight: 600; }
+.badge-yes { background: #dcfce7; color: #166534; }
+.badge-no { background: #fef2f2; color: #991b1b; }
+.response-box { font-size: 9pt; color: #475569; padding: 12px; background: #f8fafc; border-radius: 6px; margin-top: 6px; line-height: 1.6; }
+.sources { font-size: 8pt; color: #94a3b8; margin-top: 6px; }
+
+/* Advice */
+.advice-section { margin-top: 28px; page-break-before: always; }
+.advice-title { font-size: 14pt; font-weight: 800; color: #1e293b; margin-bottom: 16px; padding-bottom: 8px; border-bottom: 2px solid #e2e8f0; }
+.advice-item { padding: 16px; margin-bottom: 12px; background: #f8fafc; border-radius: 8px; border-left: 4px solid #f97316; }
+.advice-item h4 { font-size: 11pt; font-weight: 700; margin-bottom: 4px; }
+.advice-item p { font-size: 9pt; color: #475569; }
+
+/* Competitors */
+.competitor-table { width: 100%; border-collapse: collapse; margin-top: 12px; font-size: 9pt; }
+.competitor-table th { background: #f1f5f9; padding: 8px 12px; text-align: left; font-weight: 600; border-bottom: 2px solid #e2e8f0; }
+.competitor-table td { padding: 8px 12px; border-bottom: 1px solid #e2e8f0; }
+
+/* CTA */
+.cta-section { margin-top: 32px; padding: 24px; background: linear-gradient(135deg, #2563eb, #1d4ed8); color: #fff; border-radius: 12px; text-align: center; }
+.cta-section h3 { font-size: 14pt; font-weight: 800; margin-bottom: 4px; }
+.cta-section p { font-size: 9pt; opacity: .85; }
+
+/* Footer */
+.footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid #e2e8f0; font-size: 8pt; color: #94a3b8; display: flex; justify-content: space-between; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- Header -->
+  <div class="header">
+    <div class="header-left">
+      <h1>AEO 診断レポート</h1>
+      <p>AI検索最適化 診断結果</p>
+    </div>
+    <div class="header-right">
+      <p>{{ business_name }}</p>
+      <p>{{ industry }} / {{ area }}</p>
+      <p>{{ date }}</p>
+    </div>
+  </div>
+
+  <!-- Score -->
+  <div class="score-section">
+    <div class="score-grade {{ grade_class }}">{{ grade }}</div>
+    <div class="score-label">総合評価</div>
+    <div class="score-rate">ブランド言及率: {{ mention_rate }}%</div>
+  </div>
+
+  <!-- Summary -->
+  <div class="summary">
+    <div class="summary-card">
+      <div class="num">{{ total_queries }}</div>
+      <div class="label">検索クエリ数</div>
+    </div>
+    <div class="summary-card">
+      <div class="num">{{ mentioned_count }}</div>
+      <div class="label">言及されたクエリ</div>
+    </div>
+    <div class="summary-card">
+      <div class="num">{{ competitor_count }}</div>
+      <div class="label">検出された競合</div>
+    </div>
+  </div>
+
+  <!-- Query Results -->
+  {% for qr in query_results %}
+  <div class="query-block">
+    <div class="query-title">🔍 「{{ qr.query }}」</div>
+    <div>
+      {% if qr.mentioned %}
+      <span class="badge badge-yes">✅ 言及あり</span>
+      {% else %}
+      <span class="badge badge-no">❌ 言及なし</span>
+      {% endif %}
+    </div>
+    <div class="response-box">{{ qr.response_short }}</div>
+    {% if qr.sources %}
+    <div class="sources">引用ソース: {{ qr.sources | join(', ') }}</div>
+    {% endif %}
+  </div>
+  {% endfor %}
+
+  <!-- Competitors -->
+  {% if competitors %}
+  <h3 style="font-size:12pt;font-weight:700;margin:24px 0 8px">🏢 AI検索で推薦されている競合</h3>
+  <table class="competitor-table">
+    <thead><tr><th>名前</th><th>言及回数</th></tr></thead>
+    <tbody>
+      {% for c in competitors %}
+      <tr><td>{{ c.name }}</td><td>{{ c.mentions }}回</td></tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  {% endif %}
+
+  <!-- Advice -->
+  <div class="advice-section">
+    <div class="advice-title">💡 改善提案 TOP 3</div>
+    {% for a in advice_items %}
+    <div class="advice-item">
+      <h4>{{ loop.index }}. {{ a.title }}</h4>
+      <p>{{ a.description }}</p>
+    </div>
+    {% endfor %}
+  </div>
+
+  <!-- CTA -->
+  <div class="cta-section">
+    <h3>継続的なAI検索対策で集客を改善しませんか？</h3>
+    <p>月額1万円から、AI検索での推薦獲得をサポートします。まずはお気軽にご相談ください。</p>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <span>AEO Monitor Japan — AI検索最適化サービス</span>
+    <span>{{ date }}</span>
+  </div>
+
+</div>
+</body>
+</html>
