@@ -114,18 +114,21 @@ def run_diagnosis(business_name: str, industry: str, area: str, queries: list) -
     total = len(queries[:3])
     mention_rate = round(mentioned_count / total * 100) if total > 0 else 0
 
+    # Sort competitors first (needed for advice prompt)
+    sorted_comps = sorted(all_competitors.items(), key=lambda x: -x[1])[:10]
+
     # Get improvement advice
     advice = ""
     if OPENAI_API_KEY:
         # Competitors summary for prompt
-    comp_summary = ", ".join([f"{c[0]}({c[1]}回)" for c in sorted_comps[:5]]) if sorted_comps else "なし"
-    
-    # Query details for prompt
-    query_detail = ""
-    for qr in query_results:
-        query_detail += f"\nQ: {qr['query']}\n言及: {'あり' if qr['mentioned'] else 'なし'}\n引用ソース: {', '.join(qr.get('sources', []))}\n競合: {', '.join(qr.get('competitors_found', [])[:3])}\n"
+        comp_summary = ", ".join([f"{c[0]}({c[1]}回)" for c in sorted_comps[:5]]) if sorted_comps else "なし"
+        
+        # Query details for prompt
+        query_detail = ""
+        for qr in query_results:
+            query_detail += f"\nQ: {qr['query']}\n言及: {'あり' if qr['mentioned'] else 'なし'}\n引用ソース: {', '.join(qr.get('sources', []))}\n競合: {', '.join(qr.get('competitors_found', [])[:3])}\n"
 
-    advice_prompt = f"""あなたはAEO（AI検索最適化）の実務コンサルタントです。
+        advice_prompt = f"""あなたはAEO（AI検索最適化）の実務コンサルタントです。
 飲食店や中小企業のオーナーが**明日から実行できる**レベルの具体的な改善提案を生成してください。
 
 ## 重要ルール
@@ -179,8 +182,6 @@ def run_diagnosis(business_name: str, industry: str, area: str, queries: list) -
 - 口コミ20件未満の店は47%の消費者が利用回避"""
         advice = query_openai(advice_prompt)
 
-    # Sort competitors
-    sorted_comps = sorted(all_competitors.items(), key=lambda x: -x[1])[:10]
     competitors = [{"name": name, "mentions": count} for name, count in sorted_comps]
 
     diagnosis_id = str(uuid.uuid4())[:8]
