@@ -1,0 +1,83 @@
+{
+  "brand": "OpenClaw",
+  "run_id": "20260302_022015",
+  "timestamp": "2026-03-02T02:20:15.384395+09:00",
+  "results": [
+    {
+      "engine": "chatgpt",
+      "query": "AIエージェントフレームワーク おすすめ",
+      "response": "AIエージェントの開発に適したフレームワークは、目的や要件に応じて選択することが重要です。以下に、主要なAIエージェントフレームワークをいくつかご紹介します。\n\n\n\n**LangChain**  \n大規模言語モデル（LLM）を活用したアプリケーション開発のためのオープンソースフレームワークです。モジュール化されたコンポーネント（チェーン、ツール、メモリなど）を組み合わせて、柔軟なエージェントを構築できます。 ([kotora.jp](https://www.kotora.jp/c/128777-2?utm_source=openai))\n\n\n\n\n**CrewAI**  \n複数のAIエージェントが役割を分担し、協調して作業を行うマルチエージェントフレームワークです。タスク管理やプロセス設計が容易で、企業向けの高度なエージェントシステムの構築に適しています。 ([brainpad.co.jp](https://www.brainpad.co.jp/doors/contents/best-ai-agent-frameworks-comparison/?utm_source=openai))\n\n\n\n\n**AutoGen**  \nMicrosoftが開発したオープンソースのマルチエージェントフレームワークで、スケーラブルなエージェントシステムやエージェント間通信、オーケストレーションを実現します。 ([qiita.com](https://qiita.com/AInsights/items/bbba29f1c59e2e0e5a71?utm_source=openai))\n\n\n\n\n**PydanticAI**  \nPydanticチームが開発したPythonフレームワークで、生産性向上のための生成AIアプリケーション構築に特化しています。型安全な構造化レスポンスやリアルタイムデバッグ、依存性注入などの機能を提供します。 ([kotora.jp](https://www.kotora.jp/c/128777-2?utm_source=openai))\n\n\n\n\n**Rasa**  \nオープンソースの機械学習フレームワークで、テキストおよび音声ベースの会話型AI（チャットボット、音声アシスタント）の構築に特化しています。文脈理解や会話フロー管理、外部プラットフォームとの連携に強みがあります。 ([kotora.jp](https://www.kotora.jp/c/128777-2?utm_source=openai))\n\n\n各フレームワークは特徴や得意分野が異なります。具体的なプロジェクトの要件や目的に応じて、最適なフレームワークを選択することをおすすめします。 ",
+      "citations": [
+        {
+          "title": "〖2025年最新〗AIエージェントフレームワーク徹底ガイド ～今選ぶべき最強10選と活用のコツ～ - KOTORA JOURNAL",
+          "url": "https://www.kotora.jp/c/128777-2?utm_source=openai",
+          "start": 206,
+          "end": 271
+        },
+        {
+          "title": "〖2026年版〗AIエージェントフレームワーク主要15種を比較解説 | DOORS DX",
+          "url": "https://www.brainpad.co.jp/doors/contents/best-ai-agent-frameworks-comparison/?utm_source=openai",
+          "start": 383,
+          "end": 499
+        },
+        {
+          "title": "2026年版AIエージェント構築フレームワーク10選 #Python - Qiita",
+          "url": "https://qiita.com/AInsights/items/bbba29f1c59e2e0e5a71?utm_source=openai",
+          "start": 604,
+          "end": 691
+        }
+      ],
+      "timestamp": "2026-03-02T02:20:08.742504+09:00",
+      "mention": {
+        "brand": "OpenClaw",
+        "mentioned": false,
+        "position": -1,
+        "response_length": 1144
+      }
+    },
+    {
+      "engine": "chatgpt",
+      "query": "パーソナルAIアシスタント ツール",
+      "response": "パーソナルAIアシスタントは、日々の業務や生活を効率化するためのツールとして注目を集めています。以下に、代表的なサービスをご紹介します。\n\n\n\n**Mia - AIパーソナル・アシスタントアプリ**  \niPhone専用のアプリで、50以上のユニークなAIペルソナにアクセスできます。400種類以上のテンプレートを活用し、ライティング、コーチング、アシスタント、自己啓発など多彩な機能を提供します。 ([apps.apple.com](https://apps.apple.com/jp/app/mia-ai%E3%83%91%E3%83%BC%E3%82%BD%E3%83%8A%E3%83%AB-%E3%82%A2%E3%82%B7%E3%82%B9%E3%82%BF%E3%83%B3%E3%83%88/id1665295049?utm_source=openai))\n\n\n\n\n**iWeaver - 効率的なタスク処理のためのパーソナル AI アシスタント**  \n200以上のAIエージェントを活用し、重要なタスクを迅速に処理します。マインドマップジェネレーターや複数ファイルの要約機能など、高度な機能を備えています。 ([iweaver.ai](https://www.iweaver.ai/ja/?utm_source=openai))\n\n\n\n\n**Clawd Bot - 実際に仕事をするパーソナルAIアシスタント**  \nWhatsApp、Telegram、Discord、Slack、Signal、iMessageなどのチャットアプリから操作可能で、メール管理、カレンダー管理、フライトチェックインなど多彩な機能を提供します。 ([clawd-bot.com](https://clawd-bot.com/ja?utm_source=openai))\n\n\n\n\n**Martin - あなたのパーソナルAI執事、ジャビスのように**  \nスケジュール、メール、ニュースの管理を行い、プロアクティブな助けを提供します。直感的なインターフェースで、主要ツールとの連携によりスムーズなワークフローを実現します。 ([huntscreens.com](https://huntscreens.com/ja/products/martin?utm_source=openai))\n\n\n\n\n**Spark +AI - パーソナルなメールアシスタント**  \n生成AIを活用し、メールの作成や内容の書き換えを支援します。メールコミュニケーションを効率化し、時間を節約できます。 ([sparkmailapp.com](https://sparkmailapp.com/ja/blog/introducing-spark-ai?utm_source=openai))\n\n\nこれらのツールは、それぞれ独自の機能と特徴を持っています。ご自身のニーズや使用環境に合わせて、最適なパーソナルAIアシスタントを選択されることをおすすめします。 ",
+      "citations": [
+        {
+          "title": "‎Mia - AIパーソナル・アシスタントアプリ - App Store",
+          "url": "https://apps.apple.com/jp/app/mia-ai%E3%83%91%E3%83%BC%E3%82%BD%E3%83%8A%E3%83%AB-%E3%82%A2%E3%82%B7%E3%82%B9%E3%82%BF%E3%83%B3%E3%83%88/id1665295049?utm_source=openai",
+          "start": 200,
+          "end": 387
+        },
+        {
+          "title": "iWeaver - 効率的なタスク処理のためのパーソナル AI アシスタント。",
+          "url": "https://www.iweaver.ai/ja/?utm_source=openai",
+          "start": 515,
+          "end": 575
+        },
+        {
+          "title": "Clawd Bot - 実際に仕事をするパーソナルAIアシスタント",
+          "url": "https://clawd-bot.com/ja?utm_source=openai",
+          "start": 724,
+          "end": 785
+        },
+        {
+          "title": "マーティン - あなたのパーソナルAI執事、ジャビスのように",
+          "url": "https://huntscreens.com/ja/products/martin?utm_source=openai",
+          "start": 912,
+          "end": 993
+        },
+        {
+          "title": "パーソナルなメールアシスタント「Spark +AI」が登場",
+          "url": "https://sparkmailapp.com/ja/blog/introducing-spark-ai?utm_source=openai",
+          "start": 1091,
+          "end": 1184
+        }
+      ],
+      "timestamp": "2026-03-02T02:20:15.384292+09:00",
+      "mention": {
+        "brand": "OpenClaw",
+        "mentioned": false,
+        "position": -1,
+        "response_length": 1268
+      }
+    }
+  ]
+}

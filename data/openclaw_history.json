@@ -1,0 +1,395 @@
+[
+  {
+    "brand": "OpenClaw",
+    "run_id": "20260302_021430",
+    "timestamp": "2026-03-02T02:14:30.498482+09:00",
+    "results": [
+      {
+        "engine": "chatgpt",
+        "query": "AIエージェントフレームワーク おすすめ",
+        "response": "AIエージェントフレームワークは、AIエージェントの開発と運用を効率化するためのツールです。以下に、用途や要件に応じておすすめのフレームワークを紹介します。\n\n**1. LangChain（ラングチェーン）**\n\n- **特徴**: 大規模言語モデル（LLM）を活用したアプリケーション開発のためのオープンソースフレームワークです。モジュール化されたコンポーネント（チェーン、ツール、メモリなど）を組み合わせて柔軟なエージェントを構築できます。\n\n- **利点**: 豊富なLLM対応、非同期・並列処理のサポート、柔軟な記憶管理が可能です。\n\n- **適用例**: FAQボットから本格的なRAG（Retrieval Augmented Generation）システム、複雑なデータ処理を伴う多機能なAIエージェントまで幅広く対応します。\n\n- **詳細**: ([kotora.jp](https://www.kotora.jp/c/128777-2?utm_source=openai))\n\n**2. CrewAI（クルーAI）**\n\n- **特徴**: 複数のAIエージェントが役割を分担し、協調して作業を行うマルチエージェントフレームワークです。\n\n- **利点**: 役割分担による効率的なタスク処理が可能で、軽量な設計によりオンプレミス運用にも対応しています。\n\n- **適用例**: リサーチから分析、資料作成まで一連の業務を自律的に進めるシステムの構築に適しています。\n\n- **詳細**: ([brainpad.co.jp](https://www.brainpad.co.jp/doors/contents/best-ai-agent-frameworks-comparison/?utm_source=openai))\n\n**3. AutoGen（オートジェン）**\n\n- **特徴**: Microsoftが開発したオープンソースのマルチエージェントフレームワークで、スケーラブルなエージェントシステム、エージェント間通信、オーケストレーションを実現します。\n\n- **利点**: エージェント間の連携や複雑なタスクの協調処理が可能で、柔軟なカスタマイズが可能です。\n\n- **適用例**: 複数のエージェントが連携して複雑なタスクを処理するシステムの構築に適しています。\n\n- **詳細**: ([qiita.com](https://qiita.com/AInsights/items/bbba29f1c59e2e0e5a71?utm_source=openai))\n\n**4. PydanticAI（パイダンティックAI）**\n\n- **特徴**: Pydanticチームが開発したPythonフレームワークで、生産性向上のための生成AIアプリケーション構築に特化しています。\n\n- **利点**: 型安全な構造化レスポンス、リアルタイムデバッグ、依存性注入、グラフサポートなどの機能を提供します。\n\n- **適用例**: 高品質で信頼性の高いAI出力が求められるアプリケーション、複雑なデータ構造を扱う生成AI開発に適しています。\n\n- **詳細**: ([kotora.jp](https://www.kotora.jp/c/128777-2?utm_source=openai))\n\n**5. Rasa（ラサ）**\n\n- **特徴**: オープンソースの機械学習フレームワークで、テキストおよび音声ベースの会話型AI（チャットボット、音声アシスタント）の構築に特化しています。\n\n- **利点**: 自然言語理解（NLU）機能、会話フローの柔軟な設計、ノーコードUIとコードベース両方に対応しています。\n\n- **適用例**: カスタマーサポートやFAQ自動化、顧客対応チャットボットの構築に適しています。\n\n- **詳細**: ([kotora.jp](https://www.kotora.jp/c/128777-2?utm_source=openai))\n\n**選定のポイント**\n\nフレームワークを選定する際は、以下の点を考慮すると良いでしょう。\n\n- **目的と要件の明確化**: どのようなタスクを自動化したいのか、必要な機能は何かを明確にします。\n\n- **技術的な適合性**: 既存のシステムやインフラとの互換性、開発チームのスキルセットを考慮します。\n\n- **拡張性と保守性**: 将来的な機能追加や運用・保守のしやすさを検討します。\n\n- **コミュニティとサポート**: 活発なコミュニティや公式サポートがあるかを確認します。\n\n各フレームワークの公式ドキュメントやコミュニティフォーラムを参照し、実際の使用感や事例を調査することをおすすめします。 ",
+        "citations": [
+          {
+            "title": "",
+            "url": "",
+            "snippet": ""
+          },
+          {
+            "title": "",
+            "url": "",
+            "snippet": ""
+          },
+          {
+            "title": "",
+            "url": "",
+            "snippet": ""
+          },
+          {
+            "title": "",
+            "url": "",
+            "snippet": ""
+          },
+          {
+            "title": "",
+            "url": "",
+            "snippet": ""
+          }
+        ],
+        "timestamp": "2026-03-02T02:14:17.083093+09:00",
+        "mention": {
+          "brand": "OpenClaw",
+          "mentioned": false,
+          "position": -1,
+          "response_length": 2005
+        }
+      },
+      {
+        "engine": "chatgpt",
+        "query": "パーソナルAIアシスタント ツール 比較",
+        "response": "パーソナルAIアシスタントは、日常業務の効率化や情報管理をサポートするツールとして注目を集めています。以下に、主要なパーソナルAIアシスタントツールを比較し、それぞれの特徴をご紹介します。\n\n\n\n**ChatGPT**  \nOpenAIが開発したAIチャットボットで、文章作成や情報検索、アイデア出しなど多岐にわたるタスクをサポートします。無料プランと有料プラン（$20/月）があり、API連携により他のツールとも統合可能です。 ([neurostack.jp](https://neurostack.jp/tool-comparison/ai-assistant-business-support-tools-comparison-top5/?utm_source=openai))\n\n\n\n\n**Microsoft Copilot**  \nMicrosoft 365製品（Word、Excel、PowerPoint、Outlookなど）と統合されたAIアシスタントで、文書作成やデータ分析、メール管理などを効率化します。無料プランと有料プラン（$30/月）が提供されています。 ([neurostack.jp](https://neurostack.jp/tool-comparison/ai-assistant-business-support-tools-comparison-top5/?utm_source=openai))\n\n\n\n\n**Google Gemini**  \nGoogleが開発したAIアシスタントで、情報検索やマルチモーダル処理に強みを持ち、Googleサービス（Gmail、Google Docs、Driveなど）との連携がスムーズです。無料プランと有料プラン（$19.99/月）が利用可能です。 ([neurostack.jp](https://neurostack.jp/tool-comparison/ai-assistant-business-support-tools-comparison-top5/?utm_source=openai))\n\n\n\n\n**Perplexity AI**  \n情報収集やリサーチ、最新情報の取得に特化したAIアシスタントで、無料プランと有料プラン（$20/月）が提供されています。日本語対応は限定的ですが、情報収集に特化した機能が特徴です。 ([neurostack.jp](https://neurostack.jp/tool-comparison/ai-assistant-business-support-tools-comparison-top5/?utm_source=openai))\n\n\n\n\n**Notion AI**  \nノート作成やタスク管理、データベース機能を備えたNotionのAI拡張機能で、文章作成や情報整理をサポートします。月額$8から利用可能で、SlackやGoogle Drive、Jiraなどと連携できます。 ([kotora.jp](https://www.kotora.jp/c/128661-2/?utm_source=openai))\n\n\n各ツールは、得意分野や連携可能なサービスが異なります。自身の業務内容や使用しているツールとの統合性を考慮し、最適なパーソナルAIアシスタントを選択することをおすすめします。 ",
+        "citations": [
+          {
+            "title": "",
+            "url": "",
+            "snippet": ""
+          },
+          {
+            "title": "",
+            "url": "",
+            "snippet": ""
+          },
+          {
+            "title": "",
+            "url": "",
+            "snippet": ""
+          },
+          {
+            "title": "",
+            "url": "",
+            "snippet": ""
+          },
+          {
+            "title": "",
+            "url": "",
+            "snippet": ""
+          }
+        ],
+        "timestamp": "2026-03-02T02:14:23.843633+09:00",
+        "mention": {
+          "brand": "OpenClaw",
+          "mentioned": false,
+          "position": -1,
+          "response_length": 1413
+        }
+      },
+      {
+        "engine": "chatgpt",
+        "query": "AI自動化ツール 2026年 おすすめ",
+        "response": "2026年におすすめのAI自動化ツールを、主な用途別にご紹介します。\n\n**1. 業務効率化・自動化ツール**\n\n- **Zapier**：異なるアプリケーション間のワークフローを自動化するツールで、5,000以上のアプリと統合可能です。\n\n- **n8n**：ノーコードでワークフローの自動化が可能なツールで、柔軟なカスタマイズが特徴です。\n\n**2. AIエージェント**\n\n- **Manus**：ブラウザを自律的に操作し、複数のWebサイトから情報を集めて比較検討したり、指定したツールを組み合わせて成果物を作成したりする能力に長けた汎用型エージェントです。\n\n- **Lindy.ai**：シンプルな操作性とAIエージェントの高いカスタマイズ性を持ち、予定管理やカスタマーサポートなど多彩な業務を自動化します。\n\n**3. マーケティング自動化ツール**\n\n- **MarketAuto 360**：リード獲得から育成、メール配信、スコアリング、商談化までを一元管理できるマーケティング自動化ツールで、生成AIによるコンテンツ提案機能が強化されています。\n\n**4. 開発支援ツール**\n\n- **Claude Code**：エンジニア向けの開発AIで、コード生成やデバッグ支援などの機能を提供します。\n\n- **Cursor**：非エンジニアでもアプリ開発が可能なツールで、直感的なインターフェースが特徴です。\n\nこれらのツールは、業務の効率化や生産性向上に役立つとされています。導入前に各ツールの公式サイトやレビューを確認し、自社のニーズに最適なものを選定することをおすすめします。\n\nさらに、2026年に仕事が楽になる最強AIツールを紹介した動画も参考になるでしょう。\n\n[2026年 仕事が楽になる最強AIツール11選！](https://www.youtube.com/watch?v=UNcUVmBfG-E&utm_source=openai)\n ",
+        "citations": [
+          {
+            "title": "",
+            "url": "",
+            "snippet": ""
+          }
+        ],
+        "timestamp": "2026-03-02T02:14:30.498405+09:00",
+        "mention": {
+          "brand": "OpenClaw",
+          "mentioned": false,
+          "position": -1,
+          "response_length": 835
+        }
+      }
+    ]
+  },
+  {
+    "brand": "OpenClaw",
+    "run_id": "20260302_021757",
+    "timestamp": "2026-03-02T02:17:57.052300+09:00",
+    "results": [
+      {
+        "engine": "chatgpt",
+        "query": "AIエージェントフレームワーク おすすめ",
+        "response": "AIエージェントの開発に適したフレームワークは、目的や要件に応じて選択することが重要です。以下に、主要なAIエージェントフレームワークをいくつかご紹介します。\n\n\n\n**LangChain**  \n大規模言語モデル（LLM）を活用したアプリケーション開発のためのオープンソースフレームワークです。モジュール化されたコンポーネント（チェーン、ツール、メモリなど）を組み合わせて、柔軟なエージェントを構築できます。 ([kotora.jp](https://www.kotora.jp/c/128777-2?utm_source=openai))\n\n\n\n\n**CrewAI**  \n複数のAIエージェントが役割を分担し、協調作業を行うマルチエージェントフレームワークです。タスクを管理する「クルー」と、イベントに応じて処理を進める「フロー」を組み合わせることで、リサーチから分析、資料作成まで一連の業務を自律的に進められます。 ([brainpad.co.jp](https://www.brainpad.co.jp/doors/contents/best-ai-agent-frameworks-comparison/?utm_source=openai))\n\n\n\n\n**AutoGen**  \nMicrosoftが開発したオープンソースのマルチエージェントフレームワークで、スケーラブルなエージェントシステム、エージェント間通信、オーケストレーションを実現します。 ([qiita.com](https://qiita.com/AInsights/items/bbba29f1c59e2e0e5a71?utm_source=openai))\n\n\n\n\n**PydanticAI**  \nPydanticチームが開発したPythonフレームワークで、生産性向上のための生成AIアプリケーション構築に特化しています。型安全な構造化レスポンス、リアルタイムデバッグ、依存性注入、グラフサポートなどの機能を提供します。 ([kotora.jp](https://www.kotora.jp/c/128777-2?utm_source=openai))\n\n\n\n\n**Rasa**  \nオープンソースの機械学習フレームワークで、テキストおよび音声ベースの会話型AI（チャットボット、音声アシスタント）の構築に特化しています。文脈理解、会話フロー管理、外部プラットフォームとの連携に強みがあります。 ([kotora.jp](https://www.kotora.jp/c/128777-2?utm_source=openai))\n\n\n各フレームワークは、特定のユースケースや要件に応じて適しています。選択の際は、プロジェクトの目的、開発チームのスキルセット、必要な機能や拡張性を考慮して最適なものを選ぶことをおすすめします。 ",
+        "citations": [
+          {
+            "title": "〖2025年最新〗AIエージェントフレームワーク徹底ガイド ～今選ぶべき最強10選と活用のコツ～ - KOTORA JOURNAL",
+            "url": "https://www.kotora.jp/c/128777-2?utm_source=openai",
+            "start": 206,
+            "end": 271
+          },
+          {
+            "title": "〖2026年版〗AIエージェントフレームワーク主要15種を比較解説 | DOORS DX",
+            "url": "https://www.brainpad.co.jp/doors/contents/best-ai-agent-frameworks-comparison/?utm_source=openai",
+            "start": 412,
+            "end": 528
+          },
+          {
+            "title": "2026年版AIエージェント構築フレームワーク10選 #Python - Qiita",
+            "url": "https://qiita.com/AInsights/items/bbba29f1c59e2e0e5a71?utm_source=openai",
+            "start": 633,
+            "end": 720
+          }
+        ],
+        "timestamp": "2026-03-02T02:17:29.188546+09:00",
+        "mention": {
+          "brand": "OpenClaw",
+          "mentioned": false,
+          "position": -1,
+          "response_length": 1206
+        }
+      },
+      {
+        "engine": "chatgpt",
+        "query": "パーソナルAIアシスタント ツール 比較",
+        "response": "パーソナルAIアシスタントは、日常業務の効率化や情報管理に役立つツールです。以下に、主要なパーソナルAIアシスタントツールを比較し、それぞれの特徴をご紹介します。\n\n\n\n**ChatGPT**  \nOpenAIが開発したAIチャットボットで、文章作成や情報検索、アイデア出しなど多様なタスクに対応します。無料プランと月額20ドルの有料プランがあり、NotionやSlackなどのツールと連携可能です。 ([coeteco.jp](https://coeteco.jp/articles/14898?utm_source=openai))\n\n\n\n\n**Microsoft Copilot**  \nMicrosoft 365製品（Word、Excel、PowerPoint、Outlookなど）と統合されたAIアシスタントで、文書作成やデータ分析、メール管理などを支援します。月額3,200円の有料プランが提供されています。 ([coeteco.jp](https://coeteco.jp/articles/14898?utm_source=openai))\n\n\n\n\n**Google Gemini**  \nGoogleが開発したAIアシスタントで、情報検索やマルチモーダル処理に強みを持ちます。Gmail、Google Docs、DriveなどのGoogleサービスと連携し、月額2,900円からの有料プランが利用可能です。 ([coeteco.jp](https://coeteco.jp/articles/14898?utm_source=openai))\n\n\n\n\n**Perplexity AI**  \n情報収集やリサーチ、最新情報の取得に特化したAIアシスタントで、無料プランと月額20ドルの有料プランがあります。限定的な連携サービスを提供しています。 ([neurostack.jp](https://neurostack.jp/tool-comparison/ai-assistant-business-support-tools-comparison-top5/?utm_source=openai))\n\n\n\n\n**Notion AI**  \nタスク管理、文書作成、データベース機能、情報共有などをサポートするAIアシスタントで、月額8ドルからの有料プランが提供されています。Slack、Google Drive、Jiraなどと連携可能です。 ([kotora.jp](https://www.kotora.jp/c/128661-2/?utm_source=openai))\n\n\n各ツールは、得意分野や連携可能なサービスが異なります。自身の業務内容やニーズに合わせて、最適なパーソナルAIアシスタントを選択してください。 ",
+        "citations": [
+          {
+            "title": "AIアシスタントおすすめ5選を徹底比較〖2026年最新版〗 | コエテコキャンパス",
+            "url": "https://coeteco.jp/articles/14898?utm_source=openai",
+            "start": 201,
+            "end": 268
+          },
+          {
+            "title": "AIアシスタント・業務サポートツール おすすめ5選｜個人事業主・小規模チーム向けに徹底比較 – NeuroStack – AI・SaaSで何を自動化するかがすぐわかるメディア",
+            "url": "https://neurostack.jp/tool-comparison/ai-assistant-business-support-tools-comparison-top5/?utm_source=openai",
+            "start": 781,
+            "end": 908
+          },
+          {
+            "title": "〖2025年版〗AI秘書ツール徹底比較｜機能・特徴・選び方ガイド - KOTORA JOURNAL",
+            "url": "https://www.kotora.jp/c/128661-2/?utm_source=openai",
+            "start": 1029,
+            "end": 1095
+          }
+        ],
+        "timestamp": "2026-03-02T02:17:35.230706+09:00",
+        "mention": {
+          "brand": "OpenClaw",
+          "mentioned": false,
+          "position": -1,
+          "response_length": 1169
+        }
+      },
+      {
+        "engine": "chatgpt",
+        "query": "AI自動化ツール 2026年 おすすめ",
+        "response": "2026年におすすめのAI自動化ツールを、主な用途別にご紹介します。\n\n**1. 業務効率化・自動化ツール**\n\n- **Zapier**：異なるアプリケーション間のワークフローを自動化するツールで、5,000以上のアプリと統合可能です。\n\n- **n8n**：ノーコードでワークフローの自動化が可能なツールで、柔軟なカスタマイズが特徴です。\n\n**2. AIエージェント**\n\n- **Manus**：ブラウザを自律的に操作し、複数のWebサイトから情報を集めて比較検討したり、指定したツールを組み合わせて成果物を作成したりする能力に長けた汎用型エージェントです。\n\n- **Lindy.ai**：シンプルな操作性とAIエージェントの高いカスタマイズ性を持ち、予定管理やカスタマーサポートなど多彩な業務を自動化します。\n\n**3. マーケティング自動化ツール**\n\n- **MarketAuto 360**：リード獲得から育成、メール配信、スコアリング、商談化までを一元管理できるマーケティング自動化ツールで、生成AIによるコンテンツ提案機能が強化されています。\n\n**4. 開発支援ツール**\n\n- **Claude Code**：エンジニア向けの開発AIで、コード生成やデバッグ支援などの機能を提供します。\n\n- **Cursor**：非エンジニアでもアプリ開発が可能なツールで、直感的なインターフェースが特徴です。\n\n**5. 議事録作成ツール**\n\n- **Notta**：会議内容を自動文字起こしし、一元管理できるツールで、スマホアプリもあり、オンライン会議だけでなくオフラインの商談や打ち合わせも録音・文字起こしできます。\n\nこれらのツールは、業務の効率化や生産性向上に役立ちます。導入前に各ツールの公式サイトで詳細を確認し、自社のニーズに最適なものを選定してください。\n\nさらに、2026年に仕事が楽になる最強AIツールを11種類紹介した動画も参考になります。\n\n[2026年 仕事が楽になる最強AIツール11選](https://www.youtube.com/watch?v=UNcUVmBfG-E&utm_source=openai)\n ",
+        "citations": [
+          {
+            "title": "2026年 仕事が楽になる最強AIツール11選",
+            "url": "https://www.youtube.com/watch?v=UNcUVmBfG-E&utm_source=openai",
+            "start": 840,
+            "end": 928
+          }
+        ],
+        "timestamp": "2026-03-02T02:17:42.354731+09:00",
+        "mention": {
+          "brand": "OpenClaw",
+          "mentioned": false,
+          "position": -1,
+          "response_length": 930
+        }
+      },
+      {
+        "engine": "chatgpt",
+        "query": "AIエージェント 個人向け セットアップ",
+        "response": "AIエージェントを個人でセットアップする方法についてご案内いたします。以下に、初心者向けのステップとおすすめのツールをご紹介します。\n\n**1. 目的を明確にする**\n\nまず、AIエージェントを導入する目的を明確にしましょう。例えば、以下のような用途が考えられます。\n\n- **業務効率化**：スケジュール管理やメール返信の自動化\n- **調査やリサーチの自動化**：情報収集やデータ分析の支援\n- **コンテンツ作成支援**：記事執筆やアイデア出しのサポート\n\n**2. おすすめのAIエージェントツール**\n\n目的に応じて、以下のツールがおすすめです。\n\n- **AutoGPT**：自動でタスクを組み立てて実行する高機能なAIエージェントです。英語対応が中心ですが、使いこなせれば非常に強力です。詳細は以下のサイトをご参照ください。\n\n- **AgentGPT**：ブラウザ上でタスクを設定できる手軽なAIエージェントです。インストール不要で、すぐに試すことができます。詳細は以下のサイトをご参照ください。\n\n- **ChatGPTのGPTs機能**：ChatGPTの有料版（Plus）では、GPTストアから「AIエージェント系」のカスタムGPTを導入可能です。操作もシンプルで、日本語対応しています。詳細は以下のサイトをご参照ください。\n\n**3. セットアップ手順**\n\n選択したツールに応じて、以下の手順でセットアップを行います。\n\n- **AutoGPTの場合**：公式のGitHubリポジトリからソースコードを取得し、必要な依存関係をインストールします。詳細な手順は以下のサイトをご参照ください。\n\n- **AgentGPTの場合**：公式ウェブサイトから直接アクセスし、ブラウザ上でタスクを設定して実行します。インストールや複雑な設定は不要です。\n\n- **ChatGPTのGPTs機能の場合**：ChatGPTの有料版にログインし、GPTストアからカスタムGPTを検索・導入します。詳細な手順は以下のサイトをご参照ください。\n\n**4. 初期設定とテスト**\n\nセットアップ後、以下の点を確認・設定しましょう。\n\n- **目的やゴールの入力**：AIエージェントに達成してほしい具体的な目標を入力します。\n\n- **タスクの制限設定**：ステップ数や実行時間など、AIエージェントの動作に関する制限を設定します。\n\n- **外部サービスとの連携**：必要に応じて、Googleカレンダーやメールなどの外部サービスと連携します。\n\n初回は小さなタスクでテストを行い、必要に応じて設定を調整してください。\n\n**5. 継続的な改善**\n\nAIエージェントのパフォーマンスを向上させるため、以下の点を継続的に見直しましょう。\n\n- **フィードバックの提供**：AIエージェントの出力に対してフィードバックを行い、学習を促進します。\n\n- **設定の最適化**：目的や制限、連携サービスの設定を定期的に見直し、最適化します。\n\n- **新機能の導入**：ツールのアップデートや新機能を活用し、機能性を向上させます。\n\nこれらのステップを踏むことで、個人でも効果的にAIエージェントをセットアップし、活用することができます。 ",
+        "citations": [],
+        "timestamp": "2026-03-02T02:17:49.854126+09:00",
+        "mention": {
+          "brand": "OpenClaw",
+          "mentioned": false,
+          "position": -1,
+          "response_length": 1369
+        }
+      },
+      {
+        "engine": "chatgpt",
+        "query": "LLM パーソナルアシスタント 自宅サーバー",
+        "response": "自宅サーバーで大規模言語モデル（LLM）を活用したパーソナルアシスタントを構築することは、プライバシーの保護やカスタマイズ性の向上に寄与します。以下に、関連する研究やツールをご紹介します。\n\n**1. Harmony: ローカルデプロイ可能なLLMを活用したホームエージェント**\n\nHarmonyは、ローカルでデプロイ可能な小規模なLLMを活用したスマートホームアシスタントのフレームワークです。Llama3-8bというオープンソースのLLMを使用し、プライバシーを確保しつつ、ユーザーの状態に応じたアクションを実行します。例えば、ユーザーが起床した際にカーテンを開ける、帰宅時に部屋を整えるなどの機能を提供します。 ([arxiv.org](https://arxiv.org/abs/2410.14252?utm_source=openai))\n\n**2. LLM-Personalize: 家庭用ロボットのためのLLMプランナーのパーソナライズ**\n\nLLM-Personalizeは、家庭用ロボットのタスクプランニングにおいて、ユーザーの好みに合わせてLLMプランナーをパーソナライズするフレームワークです。このアプローチにより、ユーザーのニーズにより適したプランニングが可能となります。 ([arxiv.org](https://arxiv.org/abs/2404.14285?utm_source=openai))\n\n**3. LLM Bridge: マルチLLMクライアント**\n\nLLM Bridgeは、複数のLLMプラットフォームに対応したiPhone用のアプリケーションです。OllamaやLM Studioなど、ローカルでLLMを実行するプラットフォームと連携し、プライバシーを重視したAIアシスタント体験を提供します。 ([applion.jp](https://applion.jp/LLM-Bridge/iphone-6738298481/?utm_source=openai))\n\n**4. OpenClawを活用したパーソナルアシスタントの基盤設計**\n\nOpenClawは、LLMを活用したパーソナルアシスタントの基盤として利用できます。ただし、長期記憶や定期的なチェックなどの機能を確実に実行するためには、cronやシェルスクリプト、SQLiteなどの堅牢なアーキテクチャを組み合わせることが推奨されます。 ([b.hatena.ne.jp](https://b.hatena.ne.jp/entry/s/zenn.dev/kndoshn/articles/57b5033bbf155b?utm_source=openai))\n\nこれらのツールやフレームワークを活用することで、自宅サーバー上でプライバシーを保ちながら、カスタマイズ可能なパーソナルアシスタントの構築が可能となります。各ツールの詳細や導入方法については、提供元の公式情報やコミュニティのリソースを参照してください。 ",
+        "citations": [
+          {
+            "title": "Harmony: A Home Agent for Responsive Management and Action Optimization with a Locally Deployed Large Language Model",
+            "url": "https://arxiv.org/abs/2410.14252?utm_source=openai",
+            "start": 310,
+            "end": 375
+          },
+          {
+            "title": "LLM-Personalize: Aligning LLM Planners with Human Preferences via Reinforced Self-Training for Housekeeping Robots",
+            "url": "https://arxiv.org/abs/2404.14285?utm_source=openai",
+            "start": 550,
+            "end": 615
+          },
+          {
+            "title": "「LLM Bridge - マルチLLMクライアント」 - iPhoneアプリ | APPLION",
+            "url": "https://applion.jp/LLM-Bridge/iphone-6738298481/?utm_source=openai",
+            "start": 774,
+            "end": 856
+          },
+          {
+            "title": "[B! あとで読む] 🦞OpenClaw🦞をパーソナルアシスタントとして使い倒す基盤設計",
+            "url": "https://b.hatena.ne.jp/entry/s/zenn.dev/kndoshn/articles/57b5033bbf155b?utm_source=openai",
+            "start": 1024,
+            "end": 1133
+          }
+        ],
+        "timestamp": "2026-03-02T02:17:57.052219+09:00",
+        "mention": {
+          "brand": "OpenClaw",
+          "mentioned": true,
+          "position": 863,
+          "response_length": 1261
+        }
+      }
+    ]
+  },
+  {
+    "brand": "OpenClaw",
+    "run_id": "20260302_021923",
+    "timestamp": "2026-03-02T02:19:23.480531+09:00",
+    "results": [
+      {
+        "engine": "chatgpt",
+        "query": "AIエージェントフレームワーク おすすめ",
+        "response": "AIエージェントの開発に適したフレームワークは、目的や要件に応じて選択することが重要です。以下に、主要なAIエージェントフレームワークをいくつかご紹介します。\n\n\n\n**LangChain**  \n大規模言語モデル（LLM）を活用したアプリケーション開発のためのオープンソースフレームワークです。モジュール化されたコンポーネント（チェーン、ツール、メモリなど）を組み合わせて、柔軟なエージェントを構築できます。 ([kotora.jp](https://www.kotora.jp/c/128777-2?utm_source=openai))\n\n\n\n\n**CrewAI**  \n複数のAIエージェントが役割を分担し、協調して作業を行うマルチエージェントフレームワークです。タスク管理やプロセス設計が容易で、企業向けの高度なエージェントシステムの構築に適しています。 ([brainpad.co.jp](https://www.brainpad.co.jp/doors/contents/best-ai-agent-frameworks-comparison/?utm_source=openai))\n\n\n\n\n**AutoGen**  \nMicrosoftが開発したオープンソースのマルチエージェントフレームワークで、スケーラブルなエージェントシステムやエージェント間通信、オーケストレーションを実現します。 ([qiita.com](https://qiita.com/AInsights/items/bbba29f1c59e2e0e5a71?utm_source=openai))\n\n\n\n\n**PydanticAI**  \nPydanticチームが開発したPythonフレームワークで、生産性向上のための生成AIアプリケーション構築に特化しています。型安全な構造化レスポンスやリアルタイムデバッグ、依存性注入などの機能を提供します。 ([kotora.jp](https://www.kotora.jp/c/128777-2?utm_source=openai))\n\n\n\n\n**Rasa**  \nオープンソースの機械学習フレームワークで、テキストおよび音声ベースの会話型AI（チャットボット、音声アシスタント）の構築に特化しています。文脈理解や会話フロー管理、外部プラットフォームとの連携に強みがあります。 ([kotora.jp](https://www.kotora.jp/c/128777-2?utm_source=openai))\n\n\n各フレームワークの特徴や利点を比較検討し、プロジェクトの要件や目的に最適なものを選択することをおすすめします。 ",
+        "citations": [
+          {
+            "title": "〖2025年最新〗AIエージェントフレームワーク徹底ガイド ～今選ぶべき最強10選と活用のコツ～ - KOTORA JOURNAL",
+            "url": "https://www.kotora.jp/c/128777-2?utm_source=openai",
+            "start": 206,
+            "end": 271
+          },
+          {
+            "title": "〖2026年版〗AIエージェントフレームワーク主要15種を比較解説 | DOORS DX",
+            "url": "https://www.brainpad.co.jp/doors/contents/best-ai-agent-frameworks-comparison/?utm_source=openai",
+            "start": 383,
+            "end": 499
+          },
+          {
+            "title": "2026年版AIエージェント構築フレームワーク10選 #Python - Qiita",
+            "url": "https://qiita.com/AInsights/items/bbba29f1c59e2e0e5a71?utm_source=openai",
+            "start": 604,
+            "end": 691
+          }
+        ],
+        "timestamp": "2026-03-02T02:19:17.162611+09:00",
+        "mention": {
+          "brand": "OpenClaw",
+          "mentioned": false,
+          "position": -1,
+          "response_length": 1129
+        }
+      },
+      {
+        "engine": "gemini",
+        "query": "AIエージェントフレームワーク おすすめ",
+        "error": "HTTP Error 429: Too Many Requests",
+        "timestamp": "2026-03-02T02:19:17.256516+09:00"
+      },
+      {
+        "engine": "chatgpt",
+        "query": "パーソナルAIアシスタント ツール 比較",
+        "response": "パーソナルAIアシスタントは、日常業務の効率化や情報管理に役立つツールです。以下に、主要なパーソナルAIアシスタントを比較し、それぞれの特徴をご紹介します。\n\n\n\n**ChatGPT**  \nOpenAIが開発したAIチャットボットで、文章作成や情報検索、アイデア出しなど多岐にわたるタスクをサポートします。\n\n\n\n\n**Microsoft Copilot**  \nMicrosoft 365製品（Word、Excel、PowerPoint、Outlookなど）と統合され、文書作成やデータ分析、メール管理などの業務を効率化します。\n\n\n\n\n**Google Gemini**  \nGoogleが開発したAIで、情報検索やマルチモーダル処理に強みを持ち、Googleサービスとの連携がスムーズです。\n\n\n\n\n**Perplexity AI**  \n情報収集やリサーチ、最新情報の取得に特化したAIで、迅速な情報提供が特徴です。\n\n\n\n\n**Notion AI**  \nノート作成やタスク管理、データベース機能を備えたNotionのAI拡張で、情報整理や共有を効率化します。\n\n\n**選定のポイント**\n\n- **目的との合致**: どの業務を効率化したいかを明確にし、それに適したツールを選ぶことが重要です。\n\n- **既存ツールとの連携性**: 現在使用しているツールやサービスとの統合が可能か確認しましょう。\n\n- **コストとセキュリティ**: 料金プランやデータの取り扱いについて、セキュリティ面も考慮する必要があります。\n\n各ツールの詳細や最新情報については、以下のサイトで確認できます。\n\n- [ChatGPT](https://openai.com/chatgpt)\n\n- [Microsoft Copilot](https://www.microsoft.com/en-us/microsoft-365/copilot)\n\n- [Google Gemini](https://blog.google/products/assistant/gemini-ai/)\n\n- [Perplexity AI](https://www.perplexity.ai/)\n\n- [Notion AI](https://www.notion.so/product/ai)\n\nこれらの情報を参考に、自身のニーズに最適なパーソナルAIアシスタントを選択してください。 ",
+        "citations": [],
+        "timestamp": "2026-03-02T02:19:23.392307+09:00",
+        "mention": {
+          "brand": "OpenClaw",
+          "mentioned": false,
+          "position": -1,
+          "response_length": 1031
+        }
+      },
+      {
+        "engine": "gemini",
+        "query": "パーソナルAIアシスタント ツール 比較",
+        "error": "HTTP Error 429: Too Many Requests",
+        "timestamp": "2026-03-02T02:19:23.480303+09:00"
+      }
+    ]
+  },
+  {
+    "brand": "OpenClaw",
+    "run_id": "20260302_022015",
+    "timestamp": "2026-03-02T02:20:15.384395+09:00",
+    "results": [
+      {
+        "engine": "chatgpt",
+        "query": "AIエージェントフレームワーク おすすめ",
+        "response": "AIエージェントの開発に適したフレームワークは、目的や要件に応じて選択することが重要です。以下に、主要なAIエージェントフレームワークをいくつかご紹介します。\n\n\n\n**LangChain**  \n大規模言語モデル（LLM）を活用したアプリケーション開発のためのオープンソースフレームワークです。モジュール化されたコンポーネント（チェーン、ツール、メモリなど）を組み合わせて、柔軟なエージェントを構築できます。 ([kotora.jp](https://www.kotora.jp/c/128777-2?utm_source=openai))\n\n\n\n\n**CrewAI**  \n複数のAIエージェントが役割を分担し、協調して作業を行うマルチエージェントフレームワークです。タスク管理やプロセス設計が容易で、企業向けの高度なエージェントシステムの構築に適しています。 ([brainpad.co.jp](https://www.brainpad.co.jp/doors/contents/best-ai-agent-frameworks-comparison/?utm_source=openai))\n\n\n\n\n**AutoGen**  \nMicrosoftが開発したオープンソースのマルチエージェントフレームワークで、スケーラブルなエージェントシステムやエージェント間通信、オーケストレーションを実現します。 ([qiita.com](https://qiita.com/AInsights/items/bbba29f1c59e2e0e5a71?utm_source=openai))\n\n\n\n\n**PydanticAI**  \nPydanticチームが開発したPythonフレームワークで、生産性向上のための生成AIアプリケーション構築に特化しています。型安全な構造化レスポンスやリアルタイムデバッグ、依存性注入などの機能を提供します。 ([kotora.jp](https://www.kotora.jp/c/128777-2?utm_source=openai))\n\n\n\n\n**Rasa**  \nオープンソースの機械学習フレームワークで、テキストおよび音声ベースの会話型AI（チャットボット、音声アシスタント）の構築に特化しています。文脈理解や会話フロー管理、外部プラットフォームとの連携に強みがあります。 ([kotora.jp](https://www.kotora.jp/c/128777-2?utm_source=openai))\n\n\n各フレームワークは特徴や得意分野が異なります。具体的なプロジェクトの要件や目的に応じて、最適なフレームワークを選択することをおすすめします。 ",
+        "citations": [
+          {
+            "title": "〖2025年最新〗AIエージェントフレームワーク徹底ガイド ～今選ぶべき最強10選と活用のコツ～ - KOTORA JOURNAL",
+            "url": "https://www.kotora.jp/c/128777-2?utm_source=openai",
+            "start": 206,
+            "end": 271
+          },
+          {
+            "title": "〖2026年版〗AIエージェントフレームワーク主要15種を比較解説 | DOORS DX",
+            "url": "https://www.brainpad.co.jp/doors/contents/best-ai-agent-frameworks-comparison/?utm_source=openai",
+            "start": 383,
+            "end": 499
+          },
+          {
+            "title": "2026年版AIエージェント構築フレームワーク10選 #Python - Qiita",
+            "url": "https://qiita.com/AInsights/items/bbba29f1c59e2e0e5a71?utm_source=openai",
+            "start": 604,
+            "end": 691
+          }
+        ],
+        "timestamp": "2026-03-02T02:20:08.742504+09:00",
+        "mention": {
+          "brand": "OpenClaw",
+          "mentioned": false,
+          "position": -1,
+          "response_length": 1144
+        }
+      },
+      {
+        "engine": "chatgpt",
+        "query": "パーソナルAIアシスタント ツール",
+        "response": "パーソナルAIアシスタントは、日々の業務や生活を効率化するためのツールとして注目を集めています。以下に、代表的なサービスをご紹介します。\n\n\n\n**Mia - AIパーソナル・アシスタントアプリ**  \niPhone専用のアプリで、50以上のユニークなAIペルソナにアクセスできます。400種類以上のテンプレートを活用し、ライティング、コーチング、アシスタント、自己啓発など多彩な機能を提供します。 ([apps.apple.com](https://apps.apple.com/jp/app/mia-ai%E3%83%91%E3%83%BC%E3%82%BD%E3%83%8A%E3%83%AB-%E3%82%A2%E3%82%B7%E3%82%B9%E3%82%BF%E3%83%B3%E3%83%88/id1665295049?utm_source=openai))\n\n\n\n\n**iWeaver - 効率的なタスク処理のためのパーソナル AI アシスタント**  \n200以上のAIエージェントを活用し、重要なタスクを迅速に処理します。マインドマップジェネレーターや複数ファイルの要約機能など、高度な機能を備えています。 ([iweaver.ai](https://www.iweaver.ai/ja/?utm_source=openai))\n\n\n\n\n**Clawd Bot - 実際に仕事をするパーソナルAIアシスタント**  \nWhatsApp、Telegram、Discord、Slack、Signal、iMessageなどのチャットアプリから操作可能で、メール管理、カレンダー管理、フライトチェックインなど多彩な機能を提供します。 ([clawd-bot.com](https://clawd-bot.com/ja?utm_source=openai))\n\n\n\n\n**Martin - あなたのパーソナルAI執事、ジャビスのように**  \nスケジュール、メール、ニュースの管理を行い、プロアクティブな助けを提供します。直感的なインターフェースで、主要ツールとの連携によりスムーズなワークフローを実現します。 ([huntscreens.com](https://huntscreens.com/ja/products/martin?utm_source=openai))\n\n\n\n\n**Spark +AI - パーソナルなメールアシスタント**  \n生成AIを活用し、メールの作成や内容の書き換えを支援します。メールコミュニケーションを効率化し、時間を節約できます。 ([sparkmailapp.com](https://sparkmailapp.com/ja/blog/introducing-spark-ai?utm_source=openai))\n\n\nこれらのツールは、それぞれ独自の機能と特徴を持っています。ご自身のニーズや使用環境に合わせて、最適なパーソナルAIアシスタントを選択されることをおすすめします。 ",
+        "citations": [
+          {
+            "title": "‎Mia - AIパーソナル・アシスタントアプリ - App Store",
+            "url": "https://apps.apple.com/jp/app/mia-ai%E3%83%91%E3%83%BC%E3%82%BD%E3%83%8A%E3%83%AB-%E3%82%A2%E3%82%B7%E3%82%B9%E3%82%BF%E3%83%B3%E3%83%88/id1665295049?utm_source=openai",
+            "start": 200,
+            "end": 387
+          },
+          {
+            "title": "iWeaver - 効率的なタスク処理のためのパーソナル AI アシスタント。",
+            "url": "https://www.iweaver.ai/ja/?utm_source=openai",
+            "start": 515,
+            "end": 575
+          },
+          {
+            "title": "Clawd Bot - 実際に仕事をするパーソナルAIアシスタント",
+            "url": "https://clawd-bot.com/ja?utm_source=openai",
+            "start": 724,
+            "end": 785
+          },
+          {
+            "title": "マーティン - あなたのパーソナルAI執事、ジャビスのように",
+            "url": "https://huntscreens.com/ja/products/martin?utm_source=openai",
+            "start": 912,
+            "end": 993
+          },
+          {
+            "title": "パーソナルなメールアシスタント「Spark +AI」が登場",
+            "url": "https://sparkmailapp.com/ja/blog/introducing-spark-ai?utm_source=openai",
+            "start": 1091,
+            "end": 1184
+          }
+        ],
+        "timestamp": "2026-03-02T02:20:15.384292+09:00",
+        "mention": {
+          "brand": "OpenClaw",
+          "mentioned": false,
+          "position": -1,
+          "response_length": 1268
+        }
+      }
+    ]
+  }
+]
