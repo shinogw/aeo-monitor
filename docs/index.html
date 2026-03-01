@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AEO Monitor - AI検索最適化モニタリングツール</title>
+<meta name="description" content="ChatGPT・Perplexity・GeminiなどのAI検索で、あなたのブランドが推薦されているかを可視化。無料で始められるAEO対策ツール。">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Hiragino Kaku Gothic ProN','Segoe UI',sans-serif;background:#0f172a;color:#e2e8f0}
+.hero{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:40px 20px;background:radial-gradient(ellipse at 50% 0%,#1e3a5f 0%,#0f172a 70%)}
+.hero h1{font-size:3rem;font-weight:800;margin-bottom:16px;background:linear-gradient(135deg,#38bdf8,#a78bfa);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.hero .tagline{font-size:1.3rem;color:#94a3b8;max-width:600px;line-height:1.7;margin-bottom:40px}
+.cta-group{display:flex;gap:16px;flex-wrap:wrap;justify-content:center}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:16px 32px;border-radius:12px;font-size:1.1rem;font-weight:600;text-decoration:none;transition:all .2s}
+.btn-primary{background:linear-gradient(135deg,#2563eb,#7c3aed);color:#fff}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 8px 30px rgba(37,99,235,.4)}
+.btn-secondary{background:#1e293b;color:#e2e8f0;border:1px solid #334155}
+.btn-secondary:hover{border-color:#38bdf8}
+.features{padding:80px 20px;max-width:1000px;margin:0 auto}
+.features h2{text-align:center;font-size:2rem;margin-bottom:48px}
+.feature-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px}
+.feature-card{background:#1e293b;border-radius:16px;padding:28px;border:1px solid #334155}
+.feature-card .icon{font-size:2rem;margin-bottom:12px}
+.feature-card h3{font-size:1.1rem;margin-bottom:8px}
+.feature-card p{color:#94a3b8;font-size:.9rem;line-height:1.6}
+.how{padding:80px 20px;background:#1e293b}
+.how .inner{max-width:800px;margin:0 auto}
+.how h2{text-align:center;font-size:2rem;margin-bottom:48px}
+.steps{display:flex;flex-direction:column;gap:32px}
+.step{display:flex;gap:20px;align-items:flex-start}
+.step-num{background:linear-gradient(135deg,#2563eb,#7c3aed);color:#fff;width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;flex-shrink:0}
+.step h3{margin-bottom:4px}
+.step p{color:#94a3b8;font-size:.9rem;line-height:1.6}
+.code-block{background:#0f172a;border-radius:12px;padding:20px;margin:40px auto;max-width:700px;font-family:'SF Mono','Fira Code',monospace;font-size:.9rem;overflow-x:auto;border:1px solid #334155}
+.code-block .comment{color:#64748b}
+.code-block .cmd{color:#38bdf8}
+.pricing{padding:80px 20px;max-width:600px;margin:0 auto;text-align:center}
+.pricing h2{font-size:2rem;margin-bottom:16px}
+.pricing .sub{color:#94a3b8;margin-bottom:32px}
+.price-card{background:#1e293b;border:2px solid #2563eb;border-radius:16px;padding:40px}
+.price{font-size:3rem;font-weight:800}
+.price span{font-size:1rem;color:#94a3b8}
+.price-features{list-style:none;margin:24px 0;text-align:left}
+.price-features li{padding:8px 0;border-bottom:1px solid #334155}
+.price-features li::before{content:"✅ "}
+.footer{padding:40px 20px;text-align:center;color:#475569;font-size:.85rem}
+.footer a{color:#38bdf8;text-decoration:none}
+</style>
+</head>
+<body>
+<section class="hero">
+  <h1>📊 AEO Monitor</h1>
+  <p class="tagline">
+    ChatGPT・Perplexity・GeminiなどのAI検索で、<br>
+    あなたのブランドが<strong style="color:#38bdf8">推薦されているか</strong>を可視化。<br>
+    競合との差を数値で把握し、改善提案まで自動生成。
+  </p>
+  <div class="cta-group">
+    <a href="https://github.com/shinogw/aeo-monitor/archive/refs/heads/main.zip" class="btn btn-primary">⬇️ 無料ダウンロード</a>
+    <a href="https://github.com/shinogw/aeo-monitor" class="btn btn-secondary">GitHub で見る</a>
+  </div>
+</section>
+
+<section class="features">
+  <h2>なぜAEO対策が必要なのか</h2>
+  <div class="feature-grid">
+    <div class="feature-card"><div class="icon">🔍</div><h3>AI検索が主流に</h3><p>ChatGPTやPerplexityで検索するユーザーが急増。従来のSEOだけでは見つけてもらえない時代に。</p></div>
+    <div class="feature-card"><div class="icon">📉</div><h3>見えない機会損失</h3><p>AI検索で競合だけが推薦されている場合、知らないうちに顧客を失っています。まず現状を可視化。</p></div>
+    <div class="feature-card"><div class="icon">📊</div><h3>データで改善</h3><p>言及率を定量的に計測。質問パターン×ブランド×AI別のマトリクスで、改善ポイントが一目瞭然。</p></div>
+    <div class="feature-card"><div class="icon">🤖</div><h3>AI改善提案</h3><p>モニタリング結果をもとに、AIが具体的な改善アクションプランを自動生成。すぐ実行に移せます。</p></div>
+    <div class="feature-card"><div class="icon">🏢</div><h3>競合ベンチマーク</h3><p>自社と競合の言及率を並べて比較。業界内でのポジションと目指すべき水準が明確に。</p></div>
+    <div class="feature-card"><div class="icon">🔒</div><h3>自社管理で安全</h3><p>外部サービスにデータを預ける必要なし。自分の環境で実行するので、機密情報も安全。</p></div>
+  </div>
+</section>
+
+<section class="how">
+  <div class="inner">
+    <h2>使い方（3ステップ）</h2>
+    <div class="steps">
+      <div class="step"><div class="step-num">1</div><div><h3>設定ファイルを作成</h3><p>業種、自社ブランド、競合、チェックしたい質問をJSONで定義。テンプレートをそのまま編集するだけ。</p></div></div>
+      <div class="step"><div class="step-num">2</div><div><h3>モニタリング実行</h3><p>コマンド一発でAI検索エンジンに質問を投げ、ブランドの言及率を統計的に計測。</p></div></div>
+      <div class="step"><div class="step-num">3</div><div><h3>ダッシュボードで確認</h3><p>結果はWebダッシュボードで可視化。改善提案も自動生成。クライアントへの報告にそのまま使えます。</p></div></div>
+    </div>
+    <div class="code-block">
+      <span class="comment"># 1. ダウンロード</span><br>
+      <span class="cmd">git clone https://github.com/shinogw/aeo-monitor.git</span><br>
+      <span class="cmd">cd aeo-monitor</span><br><br>
+      <span class="comment"># 2. 設定ファイルを編集</span><br>
+      <span class="cmd">cp configs/sample-tax.json configs/my-client.json</span><br>
+      <span class="cmd">vim configs/my-client.json</span><br><br>
+      <span class="comment"># 3. モニタリング実行</span><br>
+      <span class="cmd">export OPENAI_API_KEY="sk-..."</span><br>
+      <span class="cmd">python3 aeo_monitor.py configs/my-client.json</span><br><br>
+      <span class="comment"># 4. ダッシュボード起動</span><br>
+      <span class="cmd">python3 server.py</span><br>
+      <span class="comment"># → http://localhost:8080</span>
+    </div>
+  </div>
+</section>
+
+<section class="pricing">
+  <h2>料金</h2>
+  <p class="sub">オープンソースで完全無料。AI API費用のみ自己負担。</p>
+  <div class="price-card">
+    <div class="price">¥0 <span>/ 永久無料</span></div>
+    <ul class="price-features">
+      <li>ChatGPT / Gemini モニタリング</li>
+      <li>競合ベンチマーク比較</li>
+      <li>Webダッシュボード</li>
+      <li>AI改善提案の自動生成</li>
+      <li>CSV / Markdown レポート出力</li>
+      <li>設定テンプレート付き</li>
+    </ul>
+    <a href="https://github.com/shinogw/aeo-monitor/archive/refs/heads/main.zip" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:16px">⬇️ ダウンロード（ZIP）</a>
+  </div>
+</section>
+
+<footer class="footer">
+  <p>© 2026 AEO Monitor | <a href="https://github.com/shinogw/aeo-monitor">GitHub</a></p>
+  <p style="margin-top:8px">AI検索時代のブランド戦略を、データドリブンに。</p>
+</footer>
+</body>
+</html>
